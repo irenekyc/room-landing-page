@@ -34,10 +34,6 @@
   margin-bottom: 24px;
 }
 
-.hero-slide__text p {
-  color: lightgray;
-}
-
 .hero-slide__link {
   color: black;
   transition: color 0.2s ease-in-out;
@@ -49,7 +45,7 @@
 }
 
 .hero-slide__link:hover {
-  color: lightgray;
+  color: hsl(0, 0%, 63%);
 }
 
 .hero-slide__link svg path {
@@ -57,7 +53,7 @@
 }
 
 .hero-slide__link:hover > svg path {
-  fill: lightgray;
+  fill: hsl(0, 0%, 63%);
 }
 
 .swiper-button-next,
