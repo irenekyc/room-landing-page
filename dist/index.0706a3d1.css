@@ -108,12 +108,14 @@
   }
   .hero-image-swiper {
     width: 60%;
-    max-height: 550px;
+    height: 100vh;
+    max-height: 660px;
   }
   .hero-text-swiper {
     width: 40%;
     height: auto !important;
-    max-height: 550px;
+    height: 100vh;
+    max-height: 660px;
   }
 
   .hero-slide__text {

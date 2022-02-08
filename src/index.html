@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,6 +11,8 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/hero-slide.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/slide-in.css" />
     <title>Frontend Mentor | Room homepage</title>
     <script type="module" src="/src/scripts/swiper.js"></script>
   </head>
@@ -64,7 +64,7 @@
       </nav>
     </header>
     <main>
-      <div class="hero-slide">
+      <section class="hero-slide">
         <button class="swiper-button-prev" id="hero-swiper-prev"></button>
         <button class="swiper-button-next" id="hero-swiper-next"></button>
         <div class="swiper hero-image-swiper">
@@ -180,14 +180,25 @@
                   </label>
                 </div>
         </div>
-      </div>
+      </section>
+      <section class="about-section">
+        <div class="about-section__image about-section__content slide-in">
+          <img src="images/image-about-dark.jpg" alt="about room"/>
+
+        </div>
+        <div  class="about-section__description about-section__content slide-in">
+          <h2>About our furniture</h2>
+          <p>Our multifunctional collection
+            blends design and function to suit your individual taste. Make each room
+            unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to
+            contemporary styles or anything in between. Product specialists are
+            available to help you create your dream space.</p>
+        </div>
+<div  class="about-section__image about-section__content slide-in">        <img src="images/image-about-light.jpg" alt="about room"/></div>
+      </section>
     </main>
-    <!--    Shop now About our furniture Our multifunctional collection
-    blends design and function to suit your individual taste. Make each room
-    unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to
-    contemporary styles or anything in between. Product specialists are
-    available to help you create your dream space. -->
+
 
     <div class="attribution">
       Challenge by
@@ -196,5 +207,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
     <script src="/src/scripts/index.js"></script>
+    <script src="/src/scripts/slide-in.js"></script>
   </body>
 </html>
