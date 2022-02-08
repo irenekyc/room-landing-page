@@ -63,3 +63,7 @@ footer p {
     justify-content: flex-end;
   }
 }
+
+label {
+  cursor: pointer;
+}

@@ -17,7 +17,7 @@
 }
 
 .hero-slide__text {
-  padding-top: 24px;
+  padding-top: 56px;
   padding-left: 30px;
   padding-right: 16px;
   padding-bottom: 80px;
@@ -37,13 +37,23 @@
 .hero-slide__link {
   color: black;
   transition: color 0.2s ease-in-out;
-  text-transform: uppercase;
+
   letter-spacing: 6px;
   justify-self: flex-end;
+  align-items: center;
   display: flex;
   width: 100%;
 }
+.hero-slide__link span {
+  line-height: 14px;
+  margin-right: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
+.hero-slide__link svg {
+  margin-top: -2px;
+}
 .hero-slide__link:hover {
   color: hsl(0, 0%, 63%);
 }

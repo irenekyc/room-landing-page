@@ -74,22 +74,25 @@
         <div class="swiper hero-image-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-image-slide">
-              <img
-                src="images/mobile-image-hero-1.jpg"
-                alt="Discover innovative ways to decorate"
-              />
+    <picture>
+      <source media="(max-width: 500px)" srcset="images/mobile-image-hero-1.jpg">
+      <source media="(min-width: 500px)" srcset="images/desktop-image-hero-1.jpg">
+      <img src="images/desktop-image-hero-1.jpg" alt="Discover innovative ways to decorate">
+    </picture>
             </div>
             <div class="swiper-slide hero-image-slide">
-              <img
-                src="images/mobile-image-hero-2.jpg"
-                alt="Discover innovative ways to decorate"
-              />
+              <picture>
+                <source media="(max-width: 500px)" srcset="images/mobile-image-hero-2.jpg">
+                <source media="(min-width: 500px)" srcset="images/desktop-image-hero-2.jpg">
+                <img src="images/desktop-image-hero-2.jpg" alt="Discover innovative ways to decorate">
+              </picture>
             </div>
             <div class="swiper-slide hero-image-slide">
-              <img
-                src="images/mobile-image-hero-3.jpg"
-                alt="Discover innovative ways to decorate"
-              />
+              <picture>
+                <source media="(max-width: 500px)" srcset="images/mobile-image-hero-3.jpg">
+                <source media="(min-width: 500px)" srcset="images/desktop-image-hero-3.jpg">
+                <img src="images/desktop-image-hero-3.jpg" alt="Discover innovative ways to decorate">
+              </picture>
             </div>
           </div>
           <div class="hero-nav-buttons-wrapper hide-in-lg">
@@ -115,7 +118,7 @@
                     </p>
                   </div>
                   <a href="/shop" class="hero-slide__link"
-                    >Shop now
+                    ><span>Shop now</span>
                     <svg
                       width="40"
                       height="12"
@@ -139,7 +142,7 @@
                     </p>
                   </div>
                   <a href="/shop" class="hero-slide__link"
-                    >Shop now
+                    ><span>Shop now</span>
                     <svg
                       width="40"
                       height="12"
@@ -163,7 +166,7 @@
                     </p>
                   </div>
                   <a href="/shop" class="hero-slide__link"
-                    >Shop now
+                  ><span>Shop now</span>
                     <svg
                       width="40"
                       height="12"
