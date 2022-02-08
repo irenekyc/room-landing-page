@@ -19,7 +19,7 @@ const swiperImage = new Swiper(".swiper.hero-image-swiper", {
 
 swiperImage.init();
 
-const swiperText = new Swiper(".swiper .hero-text-swiper", {
+const swiperText = new Swiper(".swiper.hero-text-swiper", {
   modules: [Navigation, EffectFade],
   navigation: {
     nextEl: ".swiper-button-next",

@@ -2,12 +2,14 @@
   position: relative;
   max-height: 440px;
   object-fit: cover;
-  object-position: center center;
+  object-position: 50% 50%;
 }
 
 .hero-image-swiper img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .swiper-slide {
@@ -42,6 +44,8 @@
   text-transform: uppercase;
   letter-spacing: 6px;
   justify-self: flex-end;
+  display: flex;
+  width: 100%;
 }
 
 .hero-slide__link:hover {
@@ -56,23 +60,18 @@
   fill: lightgray;
 }
 
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  opacity: 1 !important;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
-  width: 50px !important;
-  height: 50px !important;
-  background-color: black;
-  top: 0 !important;
-  bottom: 0 !important;
-  transform: none !important;
-  margin-top: 0 !important;
+  visibility: none;
 }
 
-.swiper-button-prev {
+.hero-nav-button {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.hero-swiper-prev {
   background-image: url("icon-angle-left.8ead5ec3.svg");
   background-size: 12px 25px;
   background-repeat: no-repeat;
@@ -80,7 +79,7 @@
   left: 0 !important;
 }
 
-.swiper-button-next {
+.hero-swiper-next {
   background-image: url("icon-angle-right.75cea13c.svg");
   background-size: 12px 25px;
   background-repeat: no-repeat;
@@ -88,10 +87,7 @@
   right: 0 !important;
 }
 
-.swiper-button-next:after {
-  display: none;
-}
-
+.swiper-button-next:after,
 .swiper-button-prev:after {
   display: none;
 }
@@ -104,6 +100,53 @@
   width: 100px;
   height: 50px;
   z-index: 2000;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-slide {
+    display: flex;
+  }
+  .hero-image-swiper {
+    width: 60%;
+    max-height: 550px;
+  }
+  .hero-text-swiper {
+    width: 40%;
+    height: auto !important;
+    max-height: 550px;
+  }
+
+  .hero-slide__text {
+    justify-content: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-slide__text__wrapper,
+  .hero-slide__link {
+    max-width: 400px;
+  }
+
+  .hero-slide__text__wrapper h2 {
+    font-size: 36px;
+  }
+
+  .hero-slide__text p {
+    margin-bottom: 24px;
+    max-width: 440px;
+  }
+
+  .hero-nav-buttons-wrapper {
+    left: 0;
+    height: 75px;
+    width: 150px;
+  }
+  .hero-nav-button {
+    height: 75px;
+    width: 75px;
+  }
 }
 
 /*# sourceMappingURL=index.0706a3d1.css.map */

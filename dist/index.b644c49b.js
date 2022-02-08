@@ -542,7 +542,7 @@ const swiperImage = new _swiperDefault.default(".swiper.hero-image-swiper", {
     loop: true
 });
 swiperImage.init();
-const swiperText = new _swiperDefault.default(".swiper .hero-text-swiper", {
+const swiperText = new _swiperDefault.default(".swiper.hero-text-swiper", {
     modules: [
         _swiper.Navigation,
         _swiper.EffectFade
