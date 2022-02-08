@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "swiper": "^8.0.3"
+  }
+}
