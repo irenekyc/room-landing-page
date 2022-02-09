@@ -1,0 +1,2 @@
+const hamburgerMenuIcon=document.getElementById("hamburger-menu-icon"),closeMenuIcon=document.getElementById("close-menu-icon"),menuNode=document.querySelector("nav"),closeMenu=()=>{console.log("click"),menuNode.classList.remove("mobile-menu--show")},openMenu=()=>{console.log("open"),menuNode.classList.add("mobile-menu--show")};hamburgerMenuIcon.addEventListener("click",openMenu),closeMenuIcon.addEventListener("click",closeMenu);
+//# sourceMappingURL=index.0a5f5073.js.map
